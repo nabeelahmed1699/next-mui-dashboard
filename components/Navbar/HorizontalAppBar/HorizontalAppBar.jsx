@@ -104,11 +104,11 @@ const LowerBar = () => {
 				>
 					COMPANIES
 				</Button>
-				{links.map((link) => {
+				{links.map((link, index) => {
 					return (
 						<Button
 							variant={link.variant}
-							key={link.label}
+							key={index}
 							sx={{ fontSize: '12px', color: `${link.color}` }}
 						>
 							{link.label}
