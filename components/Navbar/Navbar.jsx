@@ -5,17 +5,15 @@ import VerticalAppBar from './VerticalAppBar/VerticalAppBar';
 
 const Navbar = ({ children }) => {
 	return (
-		<>
-			<Box sx={{ display: 'flex', alignItems: 'flex-start' }}>
-				<Box sx={{ width: '15vw' }}>
-					<VerticalAppBar />
-				</Box>
-				<Box sx={{ width: '85vw', border: 1 }}>
-					<HorizontalAppBar />
-					<Box>{children}</Box>
-				</Box>
+		<Box sx={{ display: 'flex', alignItems: 'flex-start', minHeight: '100%' }}>
+			<Box sx={{ width: '15vw' }}>
+				<VerticalAppBar />
 			</Box>
-		</>
+			<Box sx={{ width: '85vw' }}>
+				<HorizontalAppBar />
+				<Box>{children}</Box>
+			</Box>
+		</Box>
 	);
 };
 

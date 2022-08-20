@@ -1,6 +1,14 @@
 import React from 'react';
 // components
-import { Box, Button, Card, Divider, Stack, Typography } from '@mui/material';
+import {
+	Box,
+	Button,
+	Card,
+	Divider,
+	IconButton,
+	Stack,
+	Typography,
+} from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 // icons
 import SortByAlphaIcon from '@mui/icons-material/SortByAlpha';
@@ -32,9 +40,15 @@ const UpperBar = () => {
 				</Typography>
 			</Box>
 			<Stack direction='row' spacing={4} sx={{ alignItems: 'center' }}>
-				<SortByAlphaIcon color='disabled' />
-				<NightlightOutlinedIcon color='disabled' />
-				<NotificationsIcon color='disabled' />
+				<IconButton>
+					<SortByAlphaIcon color='disabled' />
+				</IconButton>
+				<IconButton>
+					<NightlightOutlinedIcon color='disabled' />
+				</IconButton>
+				<IconButton>
+					<NotificationsIcon color='disabled' />
+				</IconButton>
 				<Button disableRipple variant='link'>
 					<Avatar>B</Avatar>
 					<Typography
