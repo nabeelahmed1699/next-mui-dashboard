@@ -101,8 +101,14 @@ const upperNavLinks = [
 ];
 
 const VerticalAppBar = () => {
+	const style = {
+		position: 'fixed',
+		left: 0,
+		minHeight: '100vh',
+		width: '300px',
+	};
 	return (
-		<Card sx={{ minHeight: '100vh' }}>
+		<Card sx={style}>
 			<CardContent>
 				<Stack direction='row' spacing={2}>
 					<Image src={logo} alt='logo image' />

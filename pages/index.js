@@ -1,5 +1,6 @@
 import { Box } from "@mui/system";
 import Navbar from "../components/Navbar/Navbar";
+import VerticalAppBar from "../components/Navbar/VerticalAppBar/VerticalAppBar";
 import TableComponent from "../components/TableComponent/TableComponent";
 
 export default function Home() {
