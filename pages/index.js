@@ -1,14 +1,16 @@
-import { Box } from '@mui/system';
-import Navbar from '../components/Navbar/Navbar';
+import { Box } from "@mui/system";
+import Navbar from "../components/Navbar/Navbar";
+import VerticalAppBar from "../components/Navbar/VerticalAppBar/VerticalAppBar";
+import TableComponent from "../components/TableComponent/TableComponent";
 
 export default function Home() {
-	return (
-		<Navbar>
-		<Box sx={{ bgcolor: '#f4f4f4',minHeight:'100vh'}}>
-			<Box>
-				<h1>Hello world</h1>
-			</Box>
-			</Box>
-		</Navbar>
-	);
+  return (
+    <Box sx={{ bgcolor: "#f4f4f4", minHeight: "100vh" }}>
+      <Navbar>
+        <Box sx={{ overflowX: "scroll",maxWidth:'1440px',mx:'auto' }}>
+          <TableComponent />
+        </Box>
+      </Navbar>
+    </Box>
+  );
 }
